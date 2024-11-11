@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Press Start 2P", monospace;
+}
+
+/* Title styling */
+.title {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 10px;
+}
+
+/* Specific colors for each text part */
+#UTC {
+    color: aqua;
+}
+
+#Ports {
+    color: yellow;
+}
+
+#text2 {
+    color: rgb(153, 255, 0); /* Green */
+}
+
+/* Cursor styling for both lines */
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1em;
+    background-color: #33FF33;
+    animation: blink 1s step-end infinite;
+    position: absolute;
+}
+
+/* Blinking effect for cursor */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+
